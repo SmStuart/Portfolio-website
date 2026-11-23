@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="miscellaneousstyles.css">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -23,33 +23,132 @@
     </button>
 
     <nav class="main-nav" aria-label="Main navigation">
-      <a class="active" href="index.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="university.html">University</a>
       <a href="gallery.html">Gallery</a>
       <a href="photography.html">Photography</a>
-      <a href="miscellaneous.html">Miscellaneous</a>
+      <a class="active" href="miscellaneous.html">Miscellaneous</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-
+  
   <main>
    
-
     <section class="about content-wrap" id="about">
-      <div class="about-intro">
-        <h2>About me</h2>
-        <p>I am a Bachelor of Design student at Deakin University, majoring in Interactive and UX Design and minoring in Visual Effects and Virtual Production. As I approach graduation, I am looking to begin my professional career in UX/UI design, with a strong interest in interactive experiences and game design.</p>
-        <p>Throughout my studies, I have developed a strong interest in understanding how people interact with digital products and how thoughtful design can make these experiences more intuitive, accessible, and engaging. My approach combines research, problem-solving, creativity, and user-centred design to develop solutions that balance user needs with project goals.</p>
+      <div class="about">
+        <h2>Miscellaneous</h2>
+      </div>
+    </section>
+    
+    <section>
+      <div class="tab">
+        <button class="tablink" onclick="openPage('art', this, '#071b17' )" id="defaultOpen">Art</button> 
+        <button class="tablink" onclick="openPage('not-for-profit', this, '#071b17')" >Not for profit</button>
+        <button class="tablink" onclick="openPage('audio', this, '#071b17')">Audio</button>
+      </div>
+    </section>
+    
+    <section>
+      <div id="art" class="tabcontent">
+        <div class="gallery1" id="gallery1">
+          <img src="images/art/image1.jpg" alt="Photo 1">
+          <img src="images/art/image2.png" alt="Photo 1">
+          <img src="images/art/image3.png" alt="Photo 1">
+          <img src="images/art/image4.png" alt="Photo 1">
+          <img src="images/art/image5.jpg" alt="Photo 1">
+          <img src="images/art/image6.jpg" alt="Photo 1">
+          <img src="images/art/image7.PNG" alt="Photo 1">
+          <img src="images/art/image8.png" alt="Photo 1">
+          <img src="images/art/image9.jpg" alt="Photo 1">
+          <img src="images/art/image10.jpg" alt="Photo 1">
+          <img src="images/art/image11.jpg" alt="Photo 1">
+          <img src="images/art/image12.jpg" alt="Photo 1">
+          <img src="images/art/image13.jpg" alt="Photo 1">
+          <img src="images/art/image14.jpg" alt="Photo 1">
+          <img src="images/art/image15.jpg" alt="Photo 1">
+          <img src="images/art/image16.jpg" alt="Photo 1">
+          <img src="images/art/image17.png" alt="Photo 1">
+          <img src="images/art/image18.png" alt="Photo 1">
+          <img src="images/art/image19.jpg" alt="Photo 1">
+          <img src="images/art/image20.png" alt="Photo 1">
+          <img src="images/art/image21.png" alt="Photo 1">
+          <img src="images/art/image22.png" alt="Photo 1">
+          <img src="images/art/image23.png" alt="Photo 1">
+          <img src="images/art/image24.PNG" alt="Photo 1">
+          <img src="images/art/image25.jpg" alt="Photo 1">
+          <img src="images/art/image26.png" alt="Photo 1">
+          <img src="images/art/image27.png" alt="Photo 1">
+          <img src="images/art/image28.png" alt="Photo 1">
+          <img src="images/art/image29.png" alt="Photo 1">
+          <img src="images/art/image30.png" alt="Photo 1">
+          <img src="images/art/image31.png" alt="Photo 1">
+          <img src="images/art/image32.jpg" alt="Photo 1">
+          <img src="images/art/image33.jpg" alt="Photo 1">
+          <img src="images/art/image34.jpg" alt="Photo 1">
+          <img src="images/art/image35.jpg" alt="Photo 1">
+          <img src="images/art/image36.jpg" alt="Photo 1">
+          <img src="images/art/image37.jpg" alt="Photo 1">
+          <img src="images/art/image38.jpg" alt="Photo 1">
+          <img src="images/art/image39.gif" alt="Photo 1">
+          <img src="images/art/image40.gif" alt="Photo 1">
+          <img src="images/art/image41.gif" alt="Photo 1">
+        </div>
       </div>
 
-      <div class="about-details">
-        <p>During my FreelancingHUB internship with Stephanie’s Big Cat Conservation Quest (SBCCQ), I gained practical experience working on a real client project as part of a multidisciplinary team. I contributed to website analysis and design recommendations, researching usability, accessibility, navigation, visual consistency, and content structure. This experience strengthened my understanding of professional UX practice, collaboration, and the importance of grounding design decisions in research rather than personal assumptions.</p>
+      <div id="not-for-profit" class="tabcontent">
+        <div class="gallery2" id="gallery2">
+          <img src="images/not-for-profit/Image1.png" alt="Photo 1">
+          <img src="images/not-for-profit/image2.png" alt="Photo 1">
+          <img src="images/not-for-profit/image3.png" alt="Photo 1">
+          <img src="images/not-for-profit/image4.png" alt="Photo 1">
+          <img src="images/not-for-profit/image5.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/Image6.png" alt="Photo 1">
+          <img src="images/not-for-profit/Image7.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/Image8.png" alt="Photo 1">
+          <img src="images/not-for-profit/Image9.png" alt="Photo 1">
+          <img src="images/not-for-profit/Image10.png" alt="Photo 1">
+          <img src="images/not-for-profit/Image11.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/image12.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/image13.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/image14.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/image15.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/Image16.png" alt="Photo 1">
+          <img src="images/not-for-profit/Image17.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/image18.png" alt="Photo 1">
+          <img src="images/not-for-profit/Image19.png" alt="Photo 1">
+          <img src="images/not-for-profit/image20.png" alt="Photo 1">
+          <img src="images/not-for-profit/image21.png" alt="Photo 1">
+          <img src="images/not-for-profit/image22.png" alt="Photo 1">
+          <img src="images/not-for-profit/image23.png" alt="Photo 1">
+          <img src="images/not-for-profit/image24.PNG" alt="Photo 1">
+          <img src="images/not-for-profit/Image25.png" alt="Photo 1">
+          <img src="images/not-for-profit/image26.png" alt="Photo 1">
+          <img src="images/not-for-profit/image27.png" alt="Photo 1">
+          <img src="images/not-for-profit/image28.png" alt="Photo 1">
+          <img src="images/not-for-profit/image29.png" alt="Photo 1">
+          <img src="images/not-for-profit/image30.png" alt="Photo 1">
+          <img src="images/not-for-profit/image31.png" alt="Photo 1">
+          <img src="images/not-for-profit/Image32.png" alt="Photo 1">
+          <img src="images/not-for-profit/Image33.png" alt="Photo 1">
+          <img src="images/not-for-profit/image34.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/Image35.png" alt="Photo 1">
+          <img src="images/not-for-profit/Image36.png" alt="Photo 1">
+          <img src="images/not-for-profit/image37.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/image38.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/Image39.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/Image40.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/Image41.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/Image42.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/Image43.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/Image44.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/Image45.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/Image46.jpg" alt="Photo 1">
+          <img src="images/not-for-profit/Image47.jpg" alt="Photo 1">
+        </div>
+      </div>
 
-        <p>My university projects have also allowed me to explore different areas of digital design, from developing interactive prototypes to designing user interfaces and creating immersive experiences. These projects have helped me build a versatile skill set and understand how design, technology, and creativity work together to shape meaningful user experiences.</p>
-
-        <p>Beyond university, my experience across different industries and involvement with the Lions Club of Rockingham have strengthened my communication, teamwork, adaptability, and problem-solving skills. I value continuous learning, constructive feedback, and taking the time to understand a problem before developing a solution.</p>
-
-        <p>I am now looking to apply these skills in a professional UX/UI design role where I can continue to grow, contribute to meaningful projects, and create digital experiences that are functional, accessible, and enjoyable to use. In the long term, I aspire to explore game and interactive design, combining my interest in user experience with my passion for interactive technology.</p>
+      <div id="audio" class="tabcontent">
+        <p>Get in touch, or swing by for a cup of coffee.</p>
       </div>
     </section>
   </main>
@@ -73,6 +172,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="miscellaneousscript.js"></script>
 </body>
 </html>
