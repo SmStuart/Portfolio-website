@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contactstyles.css">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -32,22 +32,74 @@
     </nav>
   </header>
 
-  <main>
-    
-
-    <section class="about content-wrap" id="about">
-      <div class="about-intro">
-        <h2>About me</h2>
-        <p>I am a Bachelor of Design student at Deakin University, majoring in Interactive and UX Design and minoring in Visual Effects and Virtual Production. As I approach graduation, I am looking to begin my professional career in UX/UI design, with a strong interest in interactive experiences and game design.</p>
-      </div>
-
-      <div class="about-details">
-        
-
-
-
-      </div>
+    <main class="contact-container">
+    <section class="contact-intro">
+      <h1>Contact me </h1>
     </section>
+
+    <section class="contact-form-section">
+
+        <h2>Send a Message</h2>
+
+        <form id="contactForm">
+
+            <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email Address *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="What is this regarding?"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Tell me what's on your mind..."
+                    rows="6"
+                    required
+                ></textarea>
+            </div>
+
+            <!-- Spam protection -->
+            <input
+                type="text"
+                name="_gotcha"
+                class="hidden-field"
+                tabindex="-1"
+                autocomplete="off"
+            >
+            <button type="submit" id="submitButton">
+                Send Message 
+            </button>
+            <p id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+    </section>  
   </main>
 
  <footer class="site-footer" id="contact">
@@ -69,6 +121,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="contactscript.js"></script>
 </body>
 </html>
